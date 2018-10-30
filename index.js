@@ -30,10 +30,14 @@ _.forEach(Array.from(year.by('months')), month => {
     let paddedDays = _.map(days, day => { // Transforms items in the array
 
         let date = ' '
-        date = new Date('YYYYMMDDT0YYMMDD');
-        year = date.getFullYear();
-        month = date.getMonth() + 1;
-        dt = date.getDate();
+        // date = new Date('YYYYMMDDTOYYMMDD');
+        // year = date.getFullYear();
+        // month = date.getMonth() + 1;
+        // dt = date.getDate();
+        var dateFormat = require('dateformat');
+        var now = new Date();
+        dateFormat("dd,mm,yy");
+
         // TODO: Change this to output a two-digit date use day.format()
 
         // TODO: Highlight September 10th in color         
