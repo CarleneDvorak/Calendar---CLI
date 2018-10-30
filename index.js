@@ -30,13 +30,13 @@ _.forEach(Array.from(year.by('months')), month => {
     let paddedDays = _.map(days, day => { // Transforms items in the array
 
         let date = ' '
-        // date = new Date('YYYYMMDDTOYYMMDD');
-        // year = date.getFullYear();
-        // month = date.getMonth() + 1;
-        // dt = date.getDate();
-        var dateFormat = require('dateformat');
-        var now = new Date();
-        dateFormat("dd,mm,yy");
+        date = new Date('YYYYMMDDTOYYMMDD');
+        year = date.getFullYear();
+        month = date.getMonth() + 1;
+        dt = date.getDate();
+        // var dateFormat = require('dateformat');
+        // var now = new Date();
+        // dateFormat("dd,mm,yy");
 
         // TODO: Change this to output a two-digit date use day.format()
 
@@ -44,6 +44,7 @@ _.forEach(Array.from(year.by('months')), month => {
         // TODO: Highlight YOUR birthday in color!
         if (day.month() == 0 && day.date() == 19) {
             date = chalk.bgRed(date)
+           
 
         }//my birthday
 
