@@ -35,27 +35,17 @@ _.forEach(Array.from(year.by('months')), month => {
 
         // TODO: Change this to output a two-digit date use day.format()
          datess = day.format('DD')
-          console.log(datess)
+        //    console.log(datess)
         // TODO: Highlight September 10th in color         
         // TODO: Highlight YOUR birthday in color!
-<<<<<<< HEAD
         if (day.month() == 9 && day.date() == 10) {
             date = chalk.bgRed(datess)
                 console.log(date);
         }
-        if(day.month() == 9 && day.date() == 20)
-                date = chalk.blue(datess)
-        
-        
-        
-        //console.log(datess);
-=======
-        if (day.month() == 0 && day.date() == 19) {
-            date = chalk.bgRed(date)
-           
-
-        }//my birthday
->>>>>>> 102d6c7158767a41397d9978197d53b47b301fa8
+       else if (day.month() == 9 && day.date() == 20){
+                date = chalk.bgBlue(datess)
+                console.log(date);
+    }else {console.log(datess)}
 
         //my birthday
 
