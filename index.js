@@ -38,6 +38,7 @@ _.forEach(Array.from(year.by('months')), month => {
           console.log(datess)
         // TODO: Highlight September 10th in color         
         // TODO: Highlight YOUR birthday in color!
+<<<<<<< HEAD
         if (day.month() == 9 && day.date() == 10) {
             date = chalk.bgRed(datess)
                 console.log(date);
@@ -48,6 +49,13 @@ _.forEach(Array.from(year.by('months')), month => {
         
         
         //console.log(datess);
+=======
+        if (day.month() == 0 && day.date() == 19) {
+            date = chalk.bgRed(date)
+           
+
+        }//my birthday
+>>>>>>> 102d6c7158767a41397d9978197d53b47b301fa8
 
         //my birthday
 
