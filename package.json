@@ -4,7 +4,9 @@
     "description": "",
     "main": "app.js",
     "dependencies": {
+        "chalk": "^2.4.1",
         "dateformat": "^3.0.3",
+        "day-format": "^1.0.4",
         "fast-date-format": "^2.0.0",
         "lodash": "^4.17.11",
         "moment": "^2.22.2",
