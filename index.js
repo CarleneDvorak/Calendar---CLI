@@ -53,21 +53,21 @@ _.forEach(Array.from(year.by('months')), month => {
 
     {
              //TODO: Append blank spaces (using paddedDays.unshift('  ')) so that the 1st ends up under the right day column 
-            paddedDays.unshift(' ');
+            paddedDays.unshift('  ');
        
     }
 // Changes the array of days to be an array of weeks, each week containing 7 items from the days array [["  ","  ","  ",01,02,03,04],[05,06...]]
     paddedDays = _.chunk(paddedDays, 7) 
 
 
-    paddedDays.forEach(week => {[01, 02, 03, 04, 05, 06, 07]
+    paddedDays.forEach(week => {[ 00, 01, 02, 03, 05, 06, 07,]
         //[ , , , 01, 02] 
 
         // TODO: Join the days together to form one string representing the week
         // TODO: 
-            let wk = week.join(' ');
-            console.log (wk)
-          
+            // let wk = week.join(' ');
+            // console.log (wk)
+           console.log(week.join('  '))
          
     })
 
